@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELECTRICITY</title>
+<link rel="stylesheet" href="elecstyle.css">
+<link rel="stylesheet" href="section3.css">
+<link rel="stylesheet" href="section2.css">
+<link rel="stylesheet" href="section5.css">
+</head>
+
+<body>
+
+
+<div class="topnav">
+
+<div class="topnav-centered">
+<a href="#home" class="active">HOME</a>
+</div>
+<div class="topnav-left">
+<a href="#contact">CONTACT US</a>
+<a href="#about">ABOUT</a>
+</div>
+<div class="topnav-right">
+<a href="#quality assuarance">QUALITY ASSUARANCE</a>
+<a href="#culture">OUR CULTURE</a>
+</div>
+<br><br><br><br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.researchgate.net/profile/Reza-Arghandeh/publication/256297925/figure/fig1/AS:484170460864512@1492446641487/A-Need-for-Power-Energy-Engineers-Today-and-Tomorrow.png" style="width:100%">
+  <div class="text"><b>COOPER WESTON ELECTRICALS LTD</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://thumbs.dreamstime.com/b/young-electrical-engineer-woman-business-man-protective-workwear-standing-front-control-panel-checking-working-191816847.jpg"style="width:100%">
+  <div class="text"><b>THE ONLY CONTRACTOR THAT YOU CAN TRUST</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://hiring-assets.careerbuilder.com/media/attachments/careerbuilder-original-3579.jpg?1511292615"style="width:100%">
+  <div class="text"><b>WE SERVE TO YOUR SATISFACTION</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+<h2>WHAT WE BRING</H2>
+<div class="column">
+  <div class="row">
+  <h3>FULL SUPPORT</h3>
+<p>
+We can build or install any type of electrical system, large or small.<br>
+We are committed to giving you the most reliable electrical system for<br>
+your needs. We are fully licensed by the Government of Kenya, assuring<br>
+you that your electrical project will be installed to exacting industry<br>
+and code standards.<br>
+</p>
+</div> 
+  <div class="row">
+  <h3>SPECIALIZATION</h3>
+<p>
+We provide electrical Engineering services in Design, Construction(Installation)<br>
+,Commissioning, Procurement and Project Management in the Electrical High Voltage,<br>
+Control and Automation sectors.<br>
+</p>
+</div>
+<div class="row">
+<h3>EXPERIENCE</h3>
+<p>
+Cooper Weston Electrical LTD has been in existance and operational since 1982.<br>
+During this period we have gained vast skills, experience and knowledge in the<br>
+Electrical and Electronics Industry.<br>
+</p>
+</div>
+<h2>CONTACT US</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname"><b>First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+<br><br>
+    <label for="lname"><b>Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+<br>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+    <label for="country"><b>Country</label><br>
+    <select id="country" name="country">
+      <option value="kenya">Kenya</option>
+      <option value="uganda">Uganda</option>
+      <option value="tanzania">Tanzania</option>
+	  <option value="ethiopia">Ethiopia</option>
+	  <option value="usa">USA</option>
+	  <option value="australia">Australia</option>
+	  <option value="england">England</option>
+	  <option value="germany">Germany</option>
+    </select>
+<br>
+<br>
+    <label for="subject"><b>Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+ <div class="row">
+  <div class="column">
+  <h3>CONTACT US</h3>
+  <p>
+E: cwl@cooperwestonltd.co.ke<br>
+Phone: 0704170067<br>
+Cell : 076906557<br>
+
+</p>
+</div> 
+  <div class="column">
+  <h3>ADDRESS</h3>
+<p>
+P.O BOX 1234-001<br>
+NAIROBI<br>
+KENYA<br>
+</p>
+</div>
+<div class="column">
+<h3>FIND US</h3>
+<p>
+College house<br>
+along university way<br>
+Koinange street<br>
+</p>
+</div>
+<div class="footer">
+ &copy;COOPER WESTON ELECTRICALS LTD. All rights reserved<br>
+ Website by MIKE TECHNOLOGIES
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">up</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "arrow";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

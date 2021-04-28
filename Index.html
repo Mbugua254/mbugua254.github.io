@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELECTRICITY</title>
+<link rel="stylesheet" href="elecstyle.css">
+<link rel="stylesheet" href="navigation.css">
+
+</head>
+
+<body>
+<div class="header">
+<h1><b>COOPER WESTON ELECTRICALS LTD</h1>
+</div>
+<ul>  
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="section4.html">Contact Us</a></li>
+  <li style="float:right"><a class="active" href="section2.html">About</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://i.pinimg.com/originals/a8/b1/d5/a8b1d55740718e847e2966a8241cddb2.jpg" style="width:100%">
+  <div class="text"><b>COOPER WESTON ELECTRICALS LTD</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://thumbs.dreamstime.com/b/young-electrical-engineer-woman-business-man-protective-workwear-standing-front-control-panel-checking-working-191816847.jpg"style="width:100%">
+  <div class="text"><b>THE ONLY CONTRACTOR THAT YOU CAN TRUST</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://hiring-assets.careerbuilder.com/media/attachments/careerbuilder-original-3579.jpg?1511292615"style="width:100%">
+  <div class="text"><b>WE SERVE TO YOUR SATISFACTION</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">up</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "arrow";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div class="footer">
+ &copy;COOPER WESTON ELECTRICALS LTD 2021. All rights reserved<br>
+ Website by ELITE TECHNOLOGIES
+</div>
+</body>
+</html>
